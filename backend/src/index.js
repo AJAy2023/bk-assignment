@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const dnconnect = require("./config/db");
- require("dotenv").config({path:(__dirname,  '.env')});
+const path  = require("path");
+ require("dotenv").config({path:(__dirname,  "../.env")});
 dnconnect();
 // app.use(express.json());  // mid
 
